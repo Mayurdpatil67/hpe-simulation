@@ -32,7 +32,8 @@ public class Employee {
         return email;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
+
 }
