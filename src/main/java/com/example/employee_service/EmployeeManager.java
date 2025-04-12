@@ -1,7 +1,10 @@
 package com.example.employee_service;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.Arrays;
 
+@Repository
 public class EmployeeManager {
     public Employees getAllEmployees() {
         return new Employees(Arrays.asList(
