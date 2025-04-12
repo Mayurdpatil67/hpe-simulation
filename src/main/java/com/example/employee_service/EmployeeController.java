@@ -1,9 +1,7 @@
 package com.example.employee_service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -18,5 +16,11 @@ public class EmployeeController {
     @GetMapping(path = "/get-employees", produces = "application/json")
     public Employees getEmployees() {
         return employeeManager.getAllEmployees();
+    }
+
+    @PostMapping(consumes = "application/json", produces = "application/json")
+    public String addEmployee(@RequestBody Employee employee) {
+        employeeManager.addEmployee(employee);
+        return "Employee addedd !";
     }
 }
