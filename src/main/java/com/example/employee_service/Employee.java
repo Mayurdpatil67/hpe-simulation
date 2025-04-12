@@ -16,6 +16,18 @@ public class Employee {
         this.title = title;
     }
 
+    // It returns the string representation of the object
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "email='" + email + '\'' +
+                ", employeeId='" + employeeId + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", title='" + title + '\'' +
+                '}';
+    }
+
     public String getEmployeeId() {
         return employeeId;
     }
