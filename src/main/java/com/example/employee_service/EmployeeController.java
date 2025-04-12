@@ -18,7 +18,7 @@ public class EmployeeController {
         return employeeManager.getAllEmployees();
     }
 
-    @PostMapping(consumes = "application/json", produces = "application/json")
+    @PostMapping(path = "post-employee", consumes = "application/json", produces = "application/json")
     public String addEmployee(@RequestBody Employee employee) {
         employeeManager.addEmployee(employee);
         return "Employee addedd !";
