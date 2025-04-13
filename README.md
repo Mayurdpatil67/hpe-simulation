@@ -52,7 +52,7 @@ Content-Type: application/json
 }
 ```
 
-- **Response:** `"Employee addedd !"` *(typo intentional to match current code)*
+- **Response:** `"Employee added !"`
 
 ---
 
