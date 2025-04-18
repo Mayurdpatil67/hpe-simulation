@@ -2,7 +2,7 @@
 
 This is a simple Spring Boot application that provides a RESTful API for managing a list of employees. It supports basic
 operations like retrieving the list of employees and adding a new employee. The app uses in-memory storage (a list) to
-hold employee data.
+hold employee data
 
 ---
 
